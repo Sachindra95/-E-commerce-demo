@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Listing</h1>
+        <div class="top-menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li class="disappear-mobile"><a href="#">CATEGORYS</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+            </ul>
+        </div>
+        
+        <input type="text" id="search" placeholder="Search products...">
+        <select id="sort">
+            <option value="name">Sort by Name</option>
+            <option value="price">Sort by Price</option>
+        </select>
+    </header>
+    <main id="product-list"></main>
+    <footer>
+        <p>Copyright &copy; 2024 E-commerce Product. All rights reserved. </p>
+    </footer>
+
+    <!-- Modal for product details -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
